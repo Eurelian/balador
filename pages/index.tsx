@@ -1,13 +1,16 @@
 import type { NextPage } from "next";
-
+import { data } from "../lib/content";
 import { Box } from "@chakra-ui/react";
 import Hero from "../components/Hero";
+import ContentBlock from "../components/ContentBlock";
 
 const Home: NextPage = () => {
   return (
-    <Box h="100vh">
+    <Box>
       <Hero />
-      <Box>Some Div</Box>
+      {data.map((item, index) => (
+        <ContentBlock key={item.title} {...item} index={index} />
+      ))}
     </Box>
   );
 };

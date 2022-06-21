@@ -25,26 +25,29 @@ const heroImages = [
   {
     source: "hero_1.jpg",
     altText: "Hero 1",
-    cardTitle: "Familia Balad'or",
+    cardTitle: "O locatie pentru toate gusturile",
     cardBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    cardMeta: "AMBIENT APARTE",
   },
   {
     source: "hero_2.jpg",
     altText: "Hero 2",
     cardTitle: "Evenimente Speciale",
     cardBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    cardMeta: "MOMENT UNICE",
   },
   {
     source: "hero_3.jpg",
     altText: "Hero 3",
-    cardTitle: "Loc de joaca",
+    cardTitle: "Activitati pentru cei mici",
     cardBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    cardMeta: "COPII FERICITI",
   },
 ];
 
 const Hero = (props: Props) => {
   return (
-    <Box width={"100%"} height="100%">
+    <Box width={"100%"}>
       <Swiper>
         {heroImages.map((image) => (
           <SwiperSlide key={image.source}>

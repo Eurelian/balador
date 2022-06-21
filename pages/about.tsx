@@ -3,7 +3,7 @@ import React from "react";
 type Props = {};
 
 const About = (props: Props) => {
-  return <div>Povestea Noastra</div>;
+  return <div></div>;
 };
 
 export default About;
